@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 2vw 8vw 8vw 5vw;
+}
+.header {
+    height: 15vh;
+    background-color: yellow;
+}
+.header_logo {
+    width: 50%;
+    height: 20vh;
+    float: left;
+    background-color: aqua;
+}
+.header_logo img {
+    height: 100%;
+    background: red;
+}
+.header_navigation {
+    width: 50%;
+    height: 20vh;   
+    float: right;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.header_navigation_list {
+    list-style-type: none;
+    background-color: brown;
+    vertical-align: middle;
+}
+
+.nav__item {
+    display: inline-block;
+    margin-left: 2vw;
+}

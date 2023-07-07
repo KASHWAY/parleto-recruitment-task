@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="pl-PL">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hubert Targosz Parleto Recruitment Task</title>
+    <meta name="description" content="Recruitment task for parleto.io">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Hubert Targosz">
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section class="header">
+
+        <div class="header_logo">
+            <img src="/images/logo-kashway.svg" class="header_logo_image" alt="kashway-logo"> 
+        </div>
+    
+        <nav class="header_navigation">
+            <ul class="header_navigation_list">
+                <li class="nav__item"><a href="#">Dashboard</a></li>
+                <li class="nav__item"><a href="#">Reports</a></li>
+                <li class="nav__item"><a href="#">Expenses</a></li>
+                <li class="nav__item"><a href="#">Settings</a></li>
+                <li class="nav__item"><a href="#">Profile</a></li>
+                <li class="nav__item"><a href="#">Log out</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section class="body">
+      <section class="expenses_box">
+        <h1>Expenses</h1>
+        <form>
+          <label><span>Period</span><span class="range">
+              <input type="date"><span>-</span>
+              <input type="date"></span></label>
+          <label><span>Category</span>
+            <select>
+              <option value="food">food</option>
+              <option value="car">car</option>
+            </select>
+          </label>
+          <label><span>Name</span>
+            <input type="text">
+          </label>
+        </form>
+        <div class="expense__item">
+          <div class="name">coffee</div>
+          <div class="price"><span class="price__amount">40</span><span class="price__currency">PLN</span></div>
+          <div class="category">food</div>
+          <div class="date">2022-07-16</div>
+        </div>
+        <div class="expense__item">
+          <div class="name">bread</div>
+          <div class="price"><span class="price__amount">8</span><span class="price__currency">PLN</span></div>
+          <div class="category">food</div>
+          <div class="date">2022-08-03</div>
+        </div>
+        <div class="expense__item">
+          <div class="name">cheese</div>
+          <div class="price"><span class="price__amount">21</span><span class="price__currency">PLN</span></div>
+          <div class="category">food</div>
+          <div class="date">2022-08-03</div>
+        </div>
+        <div class="expense__item">
+          <div class="name">fuel</div>
+          <div class="price"><span class="price__amount">320</span><span class="price__currency">PLN</span></div>
+          <div class="category">car</div>
+          <div class="date">2022-08-14</div>
+        </div>
+        <div class="expense__item">
+          <div class="name">bread</div>
+          <div class="price"><span class="price__amount">8</span><span class="price__currency">PLN</span></div>
+          <div class="category">food</div>
+          <div class="date">2022-09-01</div>
+        </div>
+        <div class="expense__item">
+          <div class="name">ham</div>
+          <div class="price"><span class="price__amount">14</span><span class="price__currency">PLN</span></div>
+          <div class="category">food</div>
+          <div class="date">2022-09-01</div>
+        </div>
+        <div class="expense__item">
+          <div class="name">butter</div>
+          <div class="price"><span class="price__amount">6</span><span class="price__currency">PLN</span></div>
+          <div class="category">food</div>
+          <div class="date">2022-09-10</div>
+        </div>
+        <div class="expense__item">
+          <div class="name">fuel</div>
+          <div class="price"><span class="price__amount">320</span><span class="price__currency">PLN</span></div>
+          <div class="category">car</div>
+          <div class="date">2022-09-10</div>
+        </div>
+        <div class="expense__item">
+          <div class="name">car wash</div>
+          <div class="price"><span class="price__amount">60</span><span class="price__currency">PLN</span></div>
+          <div class="category">car</div>
+          <div class="date">2022-09-10</div>
+        </div>
+      </section>
+      <section class="summary_box">
+        <h2>Summary</h2>
+        <h3>Total: 797 PLN</h3>
+        <section class="summary_box_period">
+          <h3>Per period</h3>
+          <div class="sum_period__item">
+            <div class="date">2022-07</div>
+            <div class="amount">40</div>
+            <div class="currency">PLN</div>
+          </div>
+          <div class="sum_period__item">
+            <div class="date">2022-08</div>
+            <div class="amount">349</div>
+            <div class="currency">PLN</div>
+          </div>
+          <div class="sum_period__item">
+            <div class="date">2022-09</div>
+            <div class="amount">408</div>
+            <div class="currency">PLN</div>
+          </div>
+        </section>
+        <section class="summary_box_category">
+          <h3>Per category</h3>
+          <div class="sum_category__item">
+            <div class="date">food</div>
+            <div class="amount">97</div>
+            <div class="currency">PLN</div>
+          </div>
+          <div class="sum_category__item">
+            <div class="date">car</div>
+            <div class="amount">700</div>
+            <div class="currency">PLN</div>
+          </div>
+        </section>
+      </section>
+    </section>
+  </body>
+</html>
